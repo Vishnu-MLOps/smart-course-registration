@@ -1,0 +1,27 @@
+{
+  "name": "smart-course-registration-server",
+  "version": "1.0.0",
+  "description": "Backend API for Smart Course Registration and Academic Planning System",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "seed": "node seed/seed.js",
+    "test": "node --test --test-concurrency=1 tests/auth.test.js tests/registration.test.js tests/academic_planner.test.js tests/e2e_workflow.test.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0",
+    "helmet": "^8.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.9.5",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "mongodb-memory-server": "^10.1.3"
+  }
+}
